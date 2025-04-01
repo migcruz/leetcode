@@ -31,7 +31,7 @@
  struct number {
     int id; //this will just be the number
     bool visited; // we can use this is a flag to skip this number as a start sequence candidate
-    UT_hash_handle hh; // makes this struct hashable via uthash https://troydhanson.github.io/uthash/
+    UT_hash_handle hh; // makes this struct hashable via uthash https://troydhanson.github.io/uthash/. This is already part of leetcode. It's just a header so there's library to link against for builds.
 };
 
 struct number *numberDict = NULL;
