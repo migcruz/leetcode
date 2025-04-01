@@ -55,10 +55,12 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) 
 
     //try the edge cases
     if (target == nums[0]) {
+        free(nums);
         return true;
     }
 
     if (target == nums[numsSize - 1]) {
+        free(nums);
         return true;
     }
 
@@ -76,10 +78,12 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) 
             mid = left + (right - left) / 2;
         }
         else { // this is the answer
+            free(nums);
             return true;
         }
 
         if (mid == lastmid) { //nothing found
+            free(nums);
             return false;
         }
     }
