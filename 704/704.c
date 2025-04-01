@@ -50,7 +50,7 @@ int search(int* nums, int numsSize, int target) {
         if (nums[mid] > target) {
             //try somewhere between left and mid
             right = mid;
-            mid = left + (right - left) / 2;
+            mid = left + (right - left) / 2; // not just (right + left) / 2 to prevent buffer overflow for very large arrays.
             
         }
         else if (nums[mid] < target) {
