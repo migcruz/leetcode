@@ -39,7 +39,7 @@
  * };
  */
 
- struct ListNode* reverseList(struct ListNode* head, int k, struct ListNode *lastNext) {
+struct ListNode* reverseList(struct ListNode* head, int k, struct ListNode *lastNext) {
 
     struct ListNode* prev = lastNext;
     struct ListNode* current = head;
@@ -59,9 +59,9 @@
 
 struct ListNode* reverseKGroup(struct ListNode* head, int k) {
 
-    //we can make an array of the linkedlist nodes and then do the swaps within this array in k chunks. This will be an O(N+N+N) = O(N) solution
+    //we can make an array of the linkedlist nodes and then do the swaps within this array in k chunks. This will be an O(N+N+N+N) = O(N) solution
     // first we traverse the linked list to get the size needed to allocate for the array, then we traverse it again to put the nodes into the array
-    // then we traverse the array to do swaps.
+    // then we traverse the array to do swaps. then we traverse it again to update the next pointers.
     // This will also be O(N) space complexity
 
     // Instead let's try to do it in O(1) complexity. This means we cannot use arrays or other data structures. We only use variables like pointers

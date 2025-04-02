@@ -13,7 +13,7 @@
  * Return 'true' if there is a cycle; otherwise, return 'false'.
  *
  * Example
- 
+
 /**
  * Definition for singly-linked list.
  * struct ListNode {
@@ -21,7 +21,7 @@
  *     struct ListNode *next;
  * };
  */
- bool hasCycle(struct ListNode *head) {
+bool hasCycle(struct ListNode *head) {
 
     // we'll use Floyd's cycle detection algorithm aka tortoise and hare
     // this is O(N) time complexity and O(1) space complexity
