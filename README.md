@@ -46,6 +46,9 @@ These are my solutions for my leetcode grind
 | Binary Search Tree | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span>             |
 | AVL Tree         | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span>             |
 | Red-Black Tree  | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span>             |
+| Min Heap    | <span style="color:green">O(1)</span> <span style="color:orange">O(n)</span>    | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span> |
+| Max Heap    | <span style="color:green">O(1)</span> <span style="color:orange">O(n)</span>    | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span> |
+| Min-Max Heap | <span style="color:green">O(1)</span> <span style="color:orange">O(n)</span>    | <span style="color:green">O(log n)</span> | <span style="color:green">O(log n)</span> | <span style="color:blue">O(n)</span> |
 | Graph (Adj. List) | <span style="color:orange">O(V + E)</span> | <span style="color:green">O(1)</span>    | <span style="color:green">O(1)</span>    | <span style="color:purple">O(V + E)</span>         |
 | Graph (Adj. Matrix) | <span style="color:green">O(1)</span> | <span style="color:green">O(1)</span>    | <span style="color:green">O(1)</span>    | <span style="color:purple">O(V²)</span>             |
 | Trie            | <span style="color:green">O(m)</span>    | <span style="color:green">O(m)</span>    | <span style="color:green">O(m)</span>    | <span style="color:purple">O(n * m)</span>          |
