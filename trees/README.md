@@ -5,7 +5,7 @@ A **Binary Search Tree (BST)** is a type of **binary tree** where each node foll
 
 - The **left child** has a value **less than** the parent.
 - The **right child** has a value **greater than** the parent.
-- This ordering applies recursively throughout the tree.
+- This ordering applies recursively throughout the tree. It means that the left and right subtrees are also BSTs.
 
 
 ## **BST Properties**
