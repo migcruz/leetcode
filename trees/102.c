@@ -24,12 +24,6 @@
  * Constraints:
  * - The number of nodes in the tree is in the range [0, 2000].
  * - -1000 <= Node.val <= 1000.
- *
- * Approach:
- * - Use **Breadth-First Search (BFS)** to traverse the tree level by level.
- * - Utilize a **queue** to maintain nodes of the current level.
- * - Store the nodes of each level in a separate list.
- * - Continue until all levels are processed.
  */
 
 /**
@@ -41,7 +35,7 @@
  * };
  */
 
- struct queueNode {
+struct queueNode {
     struct queueNode *next;
     struct TreeNode *treePtr;
 };
