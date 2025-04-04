@@ -52,7 +52,10 @@ A **Binary Search Tree (BST)** is a type of **binary tree** where each node foll
 - **Sorting** → Inorder traversal gives sorted elements.
 - **Symbol Tables** → Used in compilers and dictionaries for key-value mappings.
 
----  
+
+```
+```
+
 # DFS vs. BFS: Depth-First Search vs. Breadth-First Search
 
 ## Introduction
@@ -105,3 +108,36 @@ Consider the following **binary tree**:
   - You need to **find the shortest path** (e.g., unweighted graphs).
   - The problem involves **level-order processing** (e.g., connecting nodes at the same depth).
   - You want a **breadth-wise exploration**.
+```
+```
+# Depth-First Search (DFS) Traversals
+
+## 1. Preorder Traversal (Root → Left → Right)
+- Process the root before its children.
+- Useful for:
+  - Copying a tree.
+  - Generating expressions from parse trees.
+  - Converting arithmetic expression trees into prefix notation.
+
+## 2. Inorder Traversal (Left → Root → Right)
+- Process the left subtree first, then the root, then the right subtree.
+- Useful for:
+  - Extracting sorted values in a Binary Search Tree (BST).
+  - Naturally evaluating mathematical expressions.
+  - Printing a BST in ascending order.
+  - Validating a BST
+
+## 3. Postorder Traversal (Left → Right → Root)
+- Process children before their parent.
+- Useful for:
+  - Deleting or freeing memory in a tree.
+  - Evaluating expressions in postfix notation.
+  - Computing values in an expression tree.
+
+## DFS Applications in Graphs
+- **Finding connected components** (exploring all reachable nodes).
+- **Solving mazes** (backtracking to find paths).
+- **Cycle detection** (identifying loops in directed graphs).
+- **Topological sorting** (ordering dependencies in a directed acyclic graph).
+
+### Need code examples? Let me know!
