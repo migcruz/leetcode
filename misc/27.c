@@ -94,6 +94,8 @@ void merge_sort(int arr[], int left, int right) {
 }
 
 int removeElement(int* nums, int numsSize, int val) {
+
+    // go through the array and increase k each time there is an element that is not val. If val is encountered, replace it with a bigger number than 100 so we can sort it later and all instances of val will be at the right side of the array
     
     int ans = 0;
 
