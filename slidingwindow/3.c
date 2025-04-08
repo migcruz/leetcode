@@ -31,7 +31,6 @@
  * - s consists of English letters, digits, symbols, and spaces.
  */
 
-
 struct number {
     int id; //this will just be the number
     int count; // we can use this is a flag to skip this number as a start sequence candidate

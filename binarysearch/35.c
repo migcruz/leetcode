@@ -80,25 +80,19 @@ int searchInsert(int* nums, int numsSize, int target) {
 
     int ans = binarySearch(nums, numsSize, left, right, target, mid);
 
-    if (nums[ans] != target) {// not found so find the next best index
-        if (nums[ans] > target) {
-            while (nums[ans] > target) {
-                ans--;
-                if (ans < 0) {
-                    ans = 0;
-                    break;
-                }
-            }
+    while (nums[ans] > target) {
+        ans--;
+        if (ans < 0) {
+            ans = 0;
+            return ans;
         }
-        else {
-             while (nums[ans] < target) {
-                ans++;
-                if (ans == numsSize) {
-                    break;
-                }
-            }
-        }
+    }
 
+    while (nums[ans] < target) {
+        ans++;
+        if (ans == numsSize) {
+            return ans;
+        }
     }
 
     return ans;
