@@ -23,9 +23,13 @@ A problem might require the **sliding window** approach if:
    - Finding a substring that matches a given pattern length.
 
 2. **Variable-Size Window**
-   - Longest substring without repeating characters.
    - Smallest subarray sum ≥ a given value.
+
+2. **Variable-Size Window with another data structure**
+   - Longest substring without repeating characters.
+   - Longest substring with no more than k distinct characters
    - Finding the maximum length of consecutive ones in a binary array.
+   - String permutations
 
 ## Time & Space Complexity
 ### **Time Complexity**
@@ -49,3 +53,7 @@ def max_sum_subarray(arr, k):
         window_sum = window_sum - arr[i] + arr[i + k]  # Slide the window
         max_sum = max(max_sum, window_sum)
     return max_sum
+```
+---
+# References
+- Sliding window youtube: https://www.youtube.com/watch?v=MK-NZ4hN7rs
