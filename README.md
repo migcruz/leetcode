@@ -67,3 +67,10 @@ These are my solutions for my leetcode grind
 - **BSTs & Balanced Trees (AVL, Red-Black)** are useful for fast **sorted** data operations.
 - **Graphs** can be represented as adjacency lists (space-efficient) or adjacency matrices (quick access).
 - **Tries** are optimized for fast **prefix-based searches**.
+
+---
+
+# Resources
+- Striver: https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/
+- Neetcode: https://neetcode.io/roadmap
+- Visualize stack/heap and variables: https://pythontutor.com/visualize.html#mode=edit
