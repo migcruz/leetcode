@@ -98,7 +98,7 @@ int solutionGetRandom(Solution* obj) {
     // struct ListNode* result = obj->head;
     // struct ListNode* current = obj->head;
     // int index = 1;
-    // srand(time(NULL)); // Seed RNG
+    // srand(time(NULL)); // Seed RNG // actually comment this out because it reseeds the random number generator which does make it truly random but does NOT guarantee equal probabiltiy for every node to be chosen. This is why the OJ fails.
 
     // while (current != NULL) {
     //     if (rand() % index == 0) { // Pick current node with probability 1/index
