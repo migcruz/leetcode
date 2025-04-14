@@ -126,8 +126,8 @@ int makeConnected(int n, int** connections, int connectionsSize, int* connection
 
     }
 
-    int components = countConnectedComponents(graph); // returns the number of computer clusters
-    // printf("Number of connected components: %d\n", components);
+    int clusters = countConnectedComponents(graph); // returns the number of computer clusters
+    // printf("Number of clusters: %d\r\n", clusters);
 
-    return components - 1;
+    return clusters - 1;
 }

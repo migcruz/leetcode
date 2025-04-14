@@ -1,7 +1,7 @@
 # Helper functions and algos for trees
 
 ## Finding the max depth of a tree (the amount of rows/levels)
-```
+```C
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -41,7 +41,7 @@ int maxDepth(struct TreeNode* root) {
 ```
 
 ## Invert a binary tree
-```
+```C
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
@@ -70,7 +70,7 @@ struct TreeNode* invertTree(struct TreeNode* root) {
 ```
 
 ## Get number of elements in a tree
-```
+```C
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
