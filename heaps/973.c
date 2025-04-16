@@ -176,6 +176,10 @@ int** kClosest(int** points, int pointsSize, int* pointsColSize, int k, int* ret
     }
     // memset(returnColSizes, 2, k * sizeof(int)); // don't use memset because you're actually setting each byte to 2 and not each element in the array to integer 2
 
+    for (int i = 0; i < pointsSize; i++) {
+        free(extractMin(&heap));
+    }
+    free(heap.arr);
     *returnSize = k;
     *returnColumnSizes = returnColSizes;
     return ans;
