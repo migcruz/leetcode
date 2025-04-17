@@ -64,7 +64,7 @@ int minimumRightShifts(int* nums, int numsSize) {
     // then add 1 adn that should be in teh answer ( or just do arrLen - pivotindex)
 
     //OR
-    // just do linear in the array
+    // just do linear search in the array
 
     // edge cases to consider:
 
