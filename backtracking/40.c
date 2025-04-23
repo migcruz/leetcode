@@ -101,7 +101,7 @@ void generateCombinations(int *arr, int n, int index, int data[], int depth, int
     
     // Recruse through array with backtracking
     for (int i = index; i < n; i++) {
-        if (i > index && arr[i] == arr[i-1]) { // found a duplicate element that we already made a combination of
+        if (i > index && arr[i] == arr[i-1]) { // found a duplicate element that we already made a combination of (requires the array to be sorted first)
             continue;
         }
         int tempSum = sum + arr[i]; // can't do sum = sum + arr[i] becauser w e need to keep the value of sum the same per recursion call because of backtracking
