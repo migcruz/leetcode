@@ -96,7 +96,7 @@ x ^ 0 = x
 |-----------------------|---------------------------|--------------------------------------|
 | Check if even         | `if ((n & 1) == 0)`       | Returns true if number is even       |
 | Toggle nth bit        | `x ^= (1 << n);`          | Flips the nth bit (0 ⇄ 1)            |
-| Set nth bit           | `x |= (1 << n);`          | Forces the nth bit to 1              |
+| Set nth bit           | `x I= (1 << n);`          | Forces the nth bit to 1              |
 | Clear nth bit         | `x &= ~(1 << n);`         | Forces the nth bit to 0              |
 | Check nth bit         | `if (x & (1 << n))`       | True if the nth bit is set (1)       |
 | Multiply by 2^k       | `x << k`                  | Left shift multiplies by 2^k         |
