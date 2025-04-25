@@ -42,7 +42,7 @@ bool areAlmostEqual(char* s1, char* s2) {
 
     // then we traverse both strings at the same time comparing characters knowing that they all have the same character frequency
     // if the characters at any index don't match increase the counter by 1, if this counter exceeds 2, then return false
-    // why 2? because for bank and kanb there are 2 indices where they dont match but just requries 1 swap
+    // why 2? because for 'bank' and 'kanb' there are 2 indices where they dont match but just requires 1 swap
 
     int freqArrS1[26] = {0};
     int freqArrS2[26] = {0};
@@ -55,7 +55,7 @@ bool areAlmostEqual(char* s1, char* s2) {
     }
 
     // check if the arrays are equal
-    for (int i = 0; i < 26; i++) { // both strings are equal length
+    for (int i = 0; i < 26; i++) {
         if (freqArrS1[i] != freqArrS2[i]) {
             return false;
         }
