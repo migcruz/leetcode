@@ -66,3 +66,26 @@ void generatePermutations(int arr[], int left, int right) {
 
 generatePermutations(arr, 0, n - 1);
 ```
+## Generate substrings
+```C
+void generateSubstrings(char *str) {
+    int n = strlen(str);
+
+    for (int start = 0; start < n; start++) {
+        for (int end = start; end < n; end++) {
+            // Print substring from index 'start' to 'end'
+            printf("[");
+            for (int i = start; i <= end; i++) {
+                printf("%c", str[i]);
+            }
+            printf("]\n");
+        }
+    }
+}
+
+int main() {
+    char str[] = "abcaa";
+    generateSubstrings(str);
+    return 0;
+}
+```
