@@ -40,7 +40,7 @@
  */
 char** splitWordsBySeparator(char** words, int wordsSize, char separator, int* returnSize) {
 
-    // we will use strtok on each word to generate the tokens an then add it to the answer array that will be resized dynamically
+    // we will use strtok on each word to generate the tokens and then add it to the answer array that will be resized dynamically
 
     if (words == NULL) {
         *returnSize = 0;
@@ -49,11 +49,11 @@ char** splitWordsBySeparator(char** words, int wordsSize, char separator, int* r
 
     int ansSize = 0;
     int ansSizeCap = 1;
-    char **ans = (char**) calloc (100, sizeof(char*));
+    char **ans = (char**) calloc (1, sizeof(char*));
 
     for (int i = 0; i < wordsSize; i++) {
 
-        char *token = strtok(words[i], &separator); // need teh reference of oeprator to pass as a string as not as a char
+        char *token = strtok(words[i], &separator); // need the reference of operator to pass as a string and not as a char
 
         while (token != NULL) {
             // printf("%s\n", token);
