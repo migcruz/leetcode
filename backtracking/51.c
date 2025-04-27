@@ -31,7 +31,7 @@ void printMatrix(char matrix[][9], int n) {
     for (int i = 0; i < n; i++) {
         // printf("%s\n", matrix[i]);
         for (int j = 0; j < n; j++) {
-        printf("%c ", matrix[i][j]);
+            printf("%c ", matrix[i][j]);
         }
         printf("\n");  // Newline after each row
     }

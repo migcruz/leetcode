@@ -99,6 +99,7 @@ double minimumAverage(int* nums, int numsSize) {
     // sort nums first then computer the average from both ends of the sorted array using 2 ptrs left right
     // then left++ then right-- while left < right
     // keep a running ans that we only update if we encounter an average that is less
+    // this will be an O(N log N) soln because of the sort
 
     int left = 0;
     int right = numsSize - 1;
