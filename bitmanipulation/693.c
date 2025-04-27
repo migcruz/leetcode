@@ -37,7 +37,7 @@ bool hasAlternatingBits(int n) {
     while (n > 0) {
 
         n >>= 1;
-         bool dpN = n & 0b1;
+        bool dpN = n & 0b1;
 
         if (dpN != !dpN1) {
             return false;
