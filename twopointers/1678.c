@@ -35,7 +35,9 @@ char * interpret(char * command){
     // we need to have two ptrs left and right to parse the string similar to sliding window,
     // if right hits G, we make left catch up and add G to answer
     // if right hits ) we make left catch up to ( then find whats in between right and left, if nothing add o to answer
-    // if right - left == 3 then add al to answer
+    // if right - left > 1 then add al to answer
+
+    // always make sure that left catches up to right, this will be an O(N) TC and O(1) SC solution
 
     if (command == NULL) {
         return NULL;
@@ -52,6 +54,7 @@ char * interpret(char * command){
 
         if (command[right] == 'G') {
             ans[ansIndex++] = 'G';
+            left = right;
         }
         else if (command[right] == ')') {
             // increase left until ( is encountered
