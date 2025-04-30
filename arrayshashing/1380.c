@@ -8,12 +8,6 @@
  *   - the minimum in its row
  *   - and the maximum in its column.
  *
- * Approach:
- * 1. For each row, find the minimum element and note its column index.
- * 2. Check if this element is also the maximum in its column.
- * 3. If so, include it in the result.
- * Time complexity: O(m * n), where m = number of rows, n = number of columns.
- *
  * Example 1:
  * Input: matrix = [[3,7,8],[9,11,13],[15,16,17]]
  * Output: [15]

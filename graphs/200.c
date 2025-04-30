@@ -7,10 +7,6 @@
  * return the number of distinct islands. An island is formed by connecting adjacent
  * lands horizontally or vertically and is surrounded by water.
  *
- * Approach:
- * Use Depth-First Search (DFS) or Breadth-First Search (BFS) to traverse and mark
- * connected land components. Count how many times a new unvisited '1' is found.
- *
  * Example 1:
  * Input:
  * grid = [

@@ -10,10 +10,6 @@
  * The area of an island is the total number of 1s in the connected component.
  * If there is no island, return 0.
  *
- * Approach:
- * Use DFS (or BFS) to explore each connected group of 1s. Track the area for each island
- * and return the maximum found during traversal.
- *
  * Example 1:
  * Input:
  * grid = [

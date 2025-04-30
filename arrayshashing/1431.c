@@ -8,12 +8,6 @@
  * Return a boolean array `result` where result[i] is true if giving all the extraCandies to the ith kid 
  * makes them have the greatest (or tied for greatest) number of candies among all kids.
  *
- * Approach:
- * 1. Find the maximum number of candies any kid currently has.
- * 2. For each kid, check if candies[i] + extraCandies >= max_candies.
- * 3. Return true if it is, else false.
- * Time complexity: O(n), where n = number of kids.
- *
  * Example 1:
  * Input: candies = [2,3,5,1,3], extraCandies = 3
  * Output: [true,true,true,false,true]

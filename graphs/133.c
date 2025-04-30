@@ -13,10 +13,6 @@
  *
  * The graph is connected, has no self-loops or repeated edges, and each node has a unique value.
  *
- * Approach:
- * Use DFS or BFS to traverse the graph while maintaining a hash map that maps each original node to its cloned copy.
- * This prevents revisiting and helps reconstruct the graph by assigning cloned neighbors properly.
- *
  * Example 1:
  * Input: adjList = [[2,4],[1,3],[2,4],[1,3]]
  * Output: [[2,4],[1,3],[2,4],[1,3]]
