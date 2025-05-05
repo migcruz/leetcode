@@ -33,13 +33,13 @@
 char kthCharacter(int k) {
     
     // make a max char array of 1000 since k <= 500
-    // keep generating strings and appending it to the string and keep checking if the string length has hit k yet, if it does then return the kth character
+    // keep generating substrings and appending it to the string and keep checking if the string length has hit k yet, if it does then return the kth character (actually k - 1 because of 0-indexed)
 
     char *arr = (char*) calloc (1000, sizeof(char));
     arr[0] = 'a';
     int len = strlen(arr);
     // printf("len: %d\n", len);
-    while(1) {
+    while (1) {
 
         if (len >= k) {
             break;
