@@ -33,7 +33,7 @@ int maxAdjacentDistance(int* nums, int numsSize) {
 
     int left = 0;
     int right = 1;
-    int ans = 0;; 
+    int ans = 0;
 
     for (right = 1; right <= numsSize; right++) {
         int temp;
